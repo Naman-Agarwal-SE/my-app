@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { ChildInputComponent } from './child-input/child-input.component';
+import { GetSetUseComponent } from './get-set-use/get-set-use.component';
+import { OnchangeWorkComponent } from './onchange-work/onchange-work.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LifecycleComponent,
+    ChildInputComponent,
+    GetSetUseComponent,
+    OnchangeWorkComponent
   ],
   imports: [
     BrowserModule,
