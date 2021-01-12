@@ -7,6 +7,7 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { ChildInputComponent } from './child-input/child-input.component';
 import { GetSetUseComponent } from './get-set-use/get-set-use.component';
 import { OnchangeWorkComponent } from './onchange-work/onchange-work.component';
+import { OutputWorkComponent } from './output-work/output-work.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { OnchangeWorkComponent } from './onchange-work/onchange-work.component';
     LifecycleComponent,
     ChildInputComponent,
     GetSetUseComponent,
-    OnchangeWorkComponent
+    OnchangeWorkComponent,
+    OutputWorkComponent
   ],
   imports: [
     BrowserModule,

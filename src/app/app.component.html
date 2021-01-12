@@ -16,3 +16,20 @@
 <button (click)="newMinor()">New minor version</button>
     <button (click)="newMajor()">New major version</button>
     <app-onchange-work [major]="major" [minor]="minor"> </app-onchange-work>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Should mankind colonize the Universe?</h2>
+    <h3>Agree: {{agreed}}, Disagree: {{disagreed}}</h3>
+    <app-output-work  *ngFor="let voter of voters"
+    [name]="voter"
+    (voted)="onVoted($event)"
+    ></app-output-work>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    

@@ -21,4 +21,11 @@ export class AppComponent {
     this.major++;
     this.minor = 0;
   }
+  agreed = 0;
+  disagreed = 0;
+  voters = ['other', 'bjp', 'aap'];
+
+  onVoted(agreed: boolean) {
+    agreed ? this.agreed++ : this.disagreed++;
+  }
 }
