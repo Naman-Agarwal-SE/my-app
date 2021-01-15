@@ -1,4 +1,16 @@
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<p>birthday:- {{birthday | date: format |uppercase}}</p>
+<button  (click)="togglech()">change date format</button>
+<div>enter the amount: <input type="text"  #box (keyup.enter)="chamount(box.value);
+    box.value=''" placeholder="amount"></div>
+<p>amount:- {{ amount | currency :'INR'}}</p>
 {{title}}
+
 <app-lifecycle></app-lifecycle>
 <br>
 <br>
@@ -32,4 +44,5 @@
     <br>
     <br>
     <br>
-    
+    <app-two-way-binding [(size)]="fsize"></app-two-way-binding>
+    <div [style.font-size.px]='fsize' >{{fsize}}</div>

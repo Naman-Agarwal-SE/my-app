@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -28,4 +29,17 @@ export class AppComponent {
   onVoted(agreed: boolean) {
     agreed ? this.agreed++ : this.disagreed++;
   }
+  amount:number|string =889;
+  birthday = new Date(1998,0,23);
+  toggle=true;
+  get format(){return this.toggle?'shortDate':'fullDate'};
+  togglech(){
+    this.toggle=!this.toggle;
+  }
+  chamount(n : string){
+    n = n.trim();
+    if (!n) { return; }
+    this.amount=n;
+  }
+  fsize=13;
 }

@@ -8,6 +8,7 @@ import { ChildInputComponent } from './child-input/child-input.component';
 import { GetSetUseComponent } from './get-set-use/get-set-use.component';
 import { OnchangeWorkComponent } from './onchange-work/onchange-work.component';
 import { OutputWorkComponent } from './output-work/output-work.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OutputWorkComponent } from './output-work/output-work.component';
     ChildInputComponent,
     GetSetUseComponent,
     OnchangeWorkComponent,
-    OutputWorkComponent
+    OutputWorkComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
