@@ -11,7 +11,7 @@ export class OutputWorkComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  @Input()name:string;
+  @Input()name!:string;
   @Output() voted =new EventEmitter<boolean>();
   didvote=false;
 

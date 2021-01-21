@@ -1,4 +1,4 @@
-
+<app-hero></app-hero>
   <br>
   <br>
   <br>
@@ -44,5 +44,6 @@
     <br>
     <br>
     <br>
-    <app-two-way-binding [(size)]="fsize"></app-two-way-binding>
-    <div [style.font-size.px]='fsize' >{{fsize}}</div>
+    <label>FontSize (px): <input [(ngModel)]="fsize"></label>
+    <app-two-way-binding [size]="fsize" (sizechange)='fsize=$event'></app-two-way-binding>
+    <div [style.font-size.px]='fsize' >{{fsize}}</div> 

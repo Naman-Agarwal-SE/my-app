@@ -11,8 +11,10 @@ export class OnchangeWorkComponent implements OnInit,OnChanges {
 
   ngOnInit(): void {
   }
-  @Input()major: number;
-  @Input()minor: number;
+  @Input()
+  major!: number;
+  @Input()
+  minor!: number;
   changelog : string[]=[];
 
   ngOnChanges(changes:SimpleChanges){

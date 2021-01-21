@@ -11,7 +11,7 @@ export class TwoWayBindingComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  @Input() size :number |string;
+  @Input() size!: number | string;
   @Output() sizechange = new  EventEmitter<number>();
   dec() { this.resize(-1); }
   inc() { this.resize(+1); }

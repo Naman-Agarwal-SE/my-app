@@ -11,7 +11,8 @@ export class ChildInputComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  @Input()hero:Hero;
-  @Input("master") masterName: string;
+  @Input() hero !: string ;
+  @Input("master")
+  masterName!: string;
 
 }

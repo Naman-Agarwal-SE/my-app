@@ -9,6 +9,9 @@ import { GetSetUseComponent } from './get-set-use/get-set-use.component';
 import { OnchangeWorkComponent } from './onchange-work/onchange-work.component';
 import { OutputWorkComponent } from './output-work/output-work.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { FormsModule } from '@angular/forms';
+import { HeroComponent } from './hero/hero.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,15 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
     GetSetUseComponent,
     OnchangeWorkComponent,
     OutputWorkComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    HeroComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
